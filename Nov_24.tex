@@ -1,0 +1,250 @@
+\documentclass[11pt,letterpaper,boxed]{hmcpset}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{cancel}
+
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+
+% convenient delimiters
+\newcommand{\set}[1]{\ensuremath{ \left\{ #1 \right\} }}
+\newcommand{\pn}[1]{\left( #1 \right)}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\bk}[1]{\left[ #1 \right]}
+\newcommand{\vc}[1]{\left\langle #1 \right\rangle}
+
+% set numbering style for enumerated lists to be of form (a), (b), (c), etc.
+\renewcommand{\labelenumi}{{(\alph{enumi})}}
+
+
+\name{}
+\class{Math 35, Section -  }
+\assignment{Problem Set 5}
+\duedate{November 24, 2015}
+
+
+\begin{document} {
+
+    \problemlist{7.\{1.1, 1.3, 1.5, 2.20, 3.30abc, 3.33c, 3.37a\}, 8.\{ 1.4abc, 2.21ab, 2.25, 4.44ab, 4.45\}}
+
+%%%%%%%%%%%%%%% Number 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[7.1.1]
+	Consider a normal population distribution with the value of $\sigma$ known.
+	\begin{enumerate}
+		\item
+			What is the confidence level for the interval $\overline{x} \pm 2.81 \sigma / \sqrt{n}$?
+		\item
+			What is the confidence level for the interval $\overline{x} \pm 1.44 \sigma / \sqrt{n}$?
+		\item
+			What value of $z_{\alpha/2}$ in the CI formula (7.5) results in a confidence level of 99.7$\%$?
+		\item
+			Answer the question posed in part (c) for a confidence level of 75$\%$.
+	\end{enumerate}
+\end{problem}
+
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[7.1.3]
+	Suppose that a random sample of 50 bottles of a particular brand of cough syrup is selected and the alcohol content of each bottle is determined. Let $\mu$ denote the average alcohol content for the population of all bottles of the brand under study. Suppose that the resulting 95$\%$ confidence interval is (7.8, 9.4).
+	\begin{enumerate}
+		\item
+			Would a 90$\%$ confidence interval calculated from this same sample have been narrower or wider than the given interval? Explain your reasoning.
+		\item
+			Consider the following statement: There is a 95$\%$ chance that $\mu$ is between 7.8 and 9.4. Is this statement correct? Why or why not?
+		\item
+			Consider the following statement: We can be highly confident that 95$\%$ of all bottles of this type of cough syrup have an alcohol content that is between 7.8 and 9.4. Is this statement correct? Why or why not?
+		\item
+			Consider the following statement: If the process of selecting a sample of size 50 and then computing the corresponding 95$\%$ interval is repeated 100 times, 95 of the resulting intervals will include $\mu$ . Is this statement correct? Why or why not?
+	\end{enumerate}
+\end{problem}
+
+\begin{solution}
+	\vfill
+	\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[7.1.5]
+	Assume that the helium porosity (in percentage) of coal samples taken from any particular seam is normally distributed with true standard deviation .75.
+	\begin{enumerate}
+		\item
+			Compute a 95$\%$ CI for the true average porosity of a certain seam if the average porosity for 20 specimens from the seam was 4.85.
+		\item
+			Compute a 98$\%$ CI for true average porosity of another seam based on 16 specimens with a sample average porosity of 4.56.
+		\item
+			How large a sample size is necessary if the width of the 95$\%$ interval is to be .40?
+		\item
+			What sample size is necessary to estimate true average porosity to within .2 with 99$\%$ confidence?
+	\end{enumerate}
+\end{problem}
+
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[7.2.20]
+	TV advertising agencies face increasing challenges in reaching audience members because viewing TV programs via digital streaming is gaining in popularity. The \textbf{Harris poll} reported on November 13, 2012, that 53$\%$ of 2343 American adults surveyed said they have watched digitally streamed TV programming on some type of device.
+	\begin{enumerate}
+		\item
+			Calculate and interpret a confidence interval at the 99$\%$ confidence level for the proportion of all adult Americans who watched streamed programming up to that point in time.
+		\item
+			What sample size would be required for the width of a 99$\%$ CI to be at most .05 irrespective of the value of $\hat{p}$?
+	\end{enumerate}
+\end{problem}
+
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[7.3.30abc]
+	Determine the $t$ critical value for a two-sided confidence interval in each of the following situations:
+	\begin{enumerate}
+		\item
+			Confidence level = 95$\%$, df = 10
+		\item
+			Confidence level = 95$\%$, df = 15
+		\item
+			Confidence level = 99$\%$, df = 10
+	\end{enumerate}
+\end{problem}
+
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[7.3.33c]
+	The article \textbf{"Measuring and Understanding the Aging of Kraft Insulating Paper in Power Transformers" (\emph{IEEE Electrical Insul. Mag.}, 1996: 28--34)} contained the following observations on degree of polymerization for paper specimens for which viscosity times concentration fell in a certain middle range:\\
+	\begin{center}
+		\begin{tabular}{c c c c c c c}
+ 			418 & 421 & 421 & 434 & 437 & 439 & 454\\
+			463 & 465 & 422 & 425 & 427 & 431 & 446\\
+			447 & 448 & 453\\
+		 \end{tabular}
+	\end{center}
+\qquad (c) Calculate a two-sided 95$\%$ confidence interval for true average degree of polymerization (as did the authors of the article). Does the interval suggest that 440 is a plausible value for true average degree of polymerization? What about 450?
+\end{problem}
+
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+%%%%%%%%%%%%%%% Number 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[7.3.37a]
+	TA study of the ability of individuals to walk in a straight line \textbf{("Can We Really Walk Straight?" \emph{Amer. J. of Physical Anthro.}, 1992: 19?27)} reported the accompanying data on cadence (strides per second) for a sample of n 5 20 randomly selected healthy men.\\
+	\begin{center}
+		\begin{tabular}{c c c c c c c c c c}
+ 			.95 & .85 & .92 & .95 & .93 & .86 & 1.00 & .92 & .85 & .81\\
+			.78 & .93 & .93 & 1.05 & .93 & 1.06 & 1.06 & .96 & .81 & .96\\
+		 \end{tabular}
+	\end{center}
+A normal probability plot gives substantial support to the assumption that the population distribution of cadence is approximately normal. A descriptive summary of the data from Minitab follows:\\
+	\begin{center}
+		\begin{tabular}{c | c c c c c c}
+ 			Variable & N & Mean & Median & TrMean & StDev & SEMean\\
+			cadence & 20 & 0.9255 & 0.9300 & 0.9261 & 0.0809 & 0.0181\\
+			\hline
+			Variable & & Min & Max & Q1 & Q3\\
+			cadence & & 0.7800 & 1.0600 & 0.8525 & 0.9600\\
+		 \end{tabular}
+	\end{center}
+	\begin{enumerate}
+		\item
+			Calculate and interpret a 95$\%$ confidence interval for population mean cadence.
+	\end{enumerate}
+\end{problem}
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[8.1.4abc]
+	Pairs of $P$-values and significance levels, $\alpha$ , are given. For each pair, state whether the observed $P$-value would lead to rejection of $H_0$ at the given significance level.\\
+	\begin{enumerate}
+		\item
+			$P$-value = .084, $\alpha = .05$
+		\item
+			$P$-value = .003, $\alpha = .001$
+		\item
+			$P$-value = .498, $\alpha = .05$
+	\end{enumerate}
+\end{problem}
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[8.2.21ab]
+	 The desired percentage of SiO$_2$ in a certain type of aluminous cement is 5.5. To test whether the true average percentage is 5.5 for a particular production facility, 16 independently obtained samples are analyzed. Suppose that the percentage of SiO$_2$ in a sample is normally distributed with $\sigma = .3$ and that $\overline{x} = 5.25$.\\
+	\begin{enumerate}
+		\item
+			Does this indicate conclusively that the true average percentage differs from 5.5?
+		\item
+			If the true average percentage is $\mu = 5.6$ and a level $\alpha = .01$ test based on $n = 16$ is used, what is the probability of detecting this departure from H$_0$?
+	\end{enumerate}
+\end{problem}
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[8.2.25]
+	 Body armor provides critical protection for law enforcement personnel, but it does affect balance and mobility. The article \textbf{"Impact of Police Body Armour and Equipment on Mobility" (\emph{Applied Ergonomics}, 2013: 957--961)} reported that for a sample of 52 male enforcement officers who underwent an acceleration task that simulated exiting a vehicle while wearing armor, the sample mean was 1.95 sec, and the sample standard deviation was .20 sec. Does it appear that true average task time is less than 2 sec? Carry out a test of appropriate hypotheses using a significance level of .01.
+\end{problem}
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[8.4.44ab]
+	 A manufacturer of nickel-hydrogen batteries randomly selects 100 nickel plates for test cells, cycles them a specified number of times, and determines that 14 of the plates have blistered.
+	 \begin{enumerate}
+		 \item
+		 	Does this provide compelling evidence for concluding that more than 10$\%$ of all plates blister under such circumstances? State and test the appropriate hypotheses using a significance level of .05. In reaching your conclusion, what type of error might you have committed?
+		\item
+			If it is really the case that 15$\%$ of all plates blister under these circumstances and a sample size of 100 is used, how likely is it that the null hypothesis of part (a) will not be rejected by the level .05 test? Answer this question for a sample size of 200.
+	 \end{enumerate}
+\end{problem}
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[8.4.45]
+	 A random sample of 150 recent donations at a certain blood bank reveals that 82 were type A blood. Does this suggest that the actual percentage of type A donations differs from 40$\%$, the percentage of the population having type A blood? Carry out a test of the appropriate hypotheses using a significance level of .01. Would your conclusion have been different if a significance level of .05 had been used?
+\end{problem}
+\begin{solution}
+	\vfill
+\end{solution}
+
+\end{document}
