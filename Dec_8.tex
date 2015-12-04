@@ -1,0 +1,369 @@
+\documentclass[11pt,letterpaper,boxed]{hmcpset}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{cancel}
+
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+
+% convenient delimiters
+\newcommand{\set}[1]{\ensuremath{ \left\{ #1 \right\} }}
+\newcommand{\pn}[1]{\left( #1 \right)}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\bk}[1]{\left[ #1 \right]}
+\newcommand{\vc}[1]{\left\langle #1 \right\rangle}
+
+% set numbering style for enumerated lists to be of form (a), (b), (c), etc.
+\renewcommand{\labelenumi}{{(\alph{enumi})}}
+
+
+\name{}
+\class{Math 35, Section -   }
+\assignment{Problem Set 7}
+\duedate{December 8, 2015}
+
+\begin{document}
+
+\problemlist{12.1.\{2, 3, 9\}, 12.2.\{16, 17, 22a, 24\}, 4.6.\{88, 89, 94\}, 12.5.\{58, 59\}}
+
+%%%%%%%%%%%%%%% Number 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[12.1.2]
+	The article \textbf{"Exhaust Emissions from Four-Stroke Lawn Mower Engines" (\emph{J. of the Air and Water Mgmnt. Assoc.}, 1997: 945--952)} reported data from a study in which both a baseline gasoline mixture and a reformulated gasoline were used. Consider the following observations on age (yr) and NO$_x$ emissions (g/kWh):
+	\begin{center}
+	\begin{tabular}{l c c c c c c c c c c}
+		\textbf{Engine} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10\\
+		\textbf{Age} & 0 & 0 & 2 & 11 & 7 & 16 & 9 & 0 & 12 & 4\\
+		\textbf{Baseline} & 1.72 & 4.38 & 4.06 & 1.26 & 5.31 & .57 & 3.37 & 3.44 & .74 & 1.24\\
+		\textbf{Reformulated} & 1.88 & 5.93 & 5.54 & 2.67 & 6.53 & .74 & 4.94 & 4.89 & .69 & 1.42
+	\end{tabular}
+	\end{center}
+Construct scatterplots of No$_x$ emmisions versus age. What appears to be the nature of the relationship between these two variables? [\textit{Note}: The authors of the cited article commented on the relationship.]
+\end{problem}
+
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[12.1.3]
+	Bivariate data often arises from the use of two different techniques to measure the same quantity. As an example, the accompanying observations on $x = $ hydrogen concentration (ppm) using a gas chromatography method and $y =$ concentration using a new sensor method were read from a graph in the article \textbf{"A New Method to Measure the Diffusible Hydrogen Content in Steel Weldments Using a Polymer Electrolyte-Based Hydrogen Sensor" (\emph{Welding Res.}, July 1997: 251s--256s)}.
+	\begin{center}
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill} }c | c c c c c c c c c c}
+		x & 47 & 62 & 65 & 70 & 70 & 78 & 95 & 100 & 114 & 118 \\
+		\hline
+		y & 38 & 62 & 53 & 67 & 84 & 79 & 93 & 106 & 117 & 116\\
+	\end{tabular*}
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill} }c | c c c c c c c c c c}
+		x & 124 & 127 & 140 & 140 & 140 & 150 & 152 & 164 & 198 & 221\\
+		\hline
+		y & 127 & 114 & 134 & 139 & 142 & 170 & 149 & 154 & 200 & 215\\
+	\end{tabular*}
+	\end{center}
+Construct a scatterplot. Does there appear to be a very strong relationship between the two types of concentration measurements? Do the two methods appear to be measuring roughly the same quantity? Explain your reasoning.
+\end{problem}
+
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[12.1.9]
+	The flow rate $y$ (m$^3$/min) in a device used for air-quality measurement depends on the pressure drop $x$ (in. of water) across the device's filter. Suppose that for $x$ values between 5 and 20, the two variables are related according to the simple linear regression model with true regression line $y = -.12 + .095x$.
+	\begin{enumerate}
+		\item
+			What is the expected change in flow rate associated with a 1-in. increase in pressure drop? Explain.
+		\item
+			What change in flow rate can be expected when pressure drop decreases by 5 in.?
+		\item
+			What is the expected flow rate for a pressure drop of 10 in.? A drop of 15 in.?
+		\item
+			Suppose $\sigma = .025$ and consider a pressure drop of 10 in. What is the probability that the observed value of flow rate will exceed .835? That observed flow rate will exceed .840?
+		\item
+			What is the probability that an observation on flow rate when pressure drop is 10 in. will exceed an observation on flow rate made when pressure drop is 11 in.?
+	\end{enumerate}
+\end{problem}
+
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[12.2.16]
+	The article \textbf{"Characterization of Highway Runoff in Austin, Texas, Area" (\emph{J. of Envir. Engr.}, 1998: 131--137)} gave a scatterplot, along with the least squares line, of $x =$ rainfull volume (m$^3$) and $y =$ runoff volume (m$^3$) for a particular location. The accompanying values were read from the plot.
+	\begin{center}
+	\begin{tabular}{c | c c c c c c c c c c c c c c c}
+		x & 5 & 12 & 14 & 17 & 23 & 30 & 40 & 47 & 55 & 67 & 72 & 81 & 96 & 112 & 127 \\
+		\hline
+		y & 4 & 10 & 13 & 15 & 15 & 25 & 27 & 46 & 38 & 46 & 53 & 70 & 82 & 99 & 100\\
+	\end{tabular}
+	\end{center}
+	\begin{enumerate}
+		\item
+			Does a scatterplot of the data support the use of the simple linear regression model?
+		\item
+			Calculate point estimates of the slope and intercept of the population regression line.
+		\item
+			Calculate a point estimate of the true average runoff volume when rainfall volume is 50.
+		\item
+			Calculate a point estimate of the standard deviation $\sigma$.
+		\item
+			What proportion of the observed variation in runoff volume can be attributed to the simple linear regression relationship between runoff and rainfall?
+	\end{enumerate}
+\end{problem}
+
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[12.2.17]
+	No-fines concrete, made from a uniformly graded coarse aggregate and a cement-water paste, is beneficial in areas prone to excessive rainfall because of its excellent drainage properties. The article \textbf{"Pavement Thickness Design for No-Fines Concrete Parking Lots," \emph{J. of Trans. Engr.}, 1995: 476--484)} employed a least squares analysis in studying how $y =$ porosity (\%) is related to $x =$ unit weight (pcf) in concrete specimens. Consider the following representative data:
+	\begin{center}
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill} }c | c c c c c c c c}
+		x & 99.0 & 101.1 & 102.6 & 103.0 & 105.4 & 107.0 & 108.7 & 110.8 \\
+		\hline
+		y & 28.8 & 27.9 & 27.0 & 25.2 & 22.8 & 21.5 & 20.9 & 19.6\\
+	\end{tabular*}
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill} }c | c c c c c c c}
+		x & 112.1 & 112.4 & 113.6 & 113.8 & 115.1 & 115.4 & 120.0\\
+		\hline
+		y & 17.1 & 18.9 & 16.0 & 16.7 & 13.0 & 13.6 & 10.8\\
+	\end{tabular*}
+	\end{center}
+	Relevant summary quantities are $\Sigma x_i= 1640.1$, $\Sigma y_i = 299.8$, $\Sigma x_i ^2 = 179,849.73$, $\Sigma x_i y_i = 32,308.59$, $\Sigma y_i ^2 = 6430.06$.
+	\begin{enumerate}
+		\item
+			Obtain the equation of the estimated regression line. Then create a scatterplot of the data and graph the estimated line. Does it appear that the model relationship will explain a great deal of the observed variation in $y$?
+		\item
+			Interpret the slope of the least squares line.
+		\item
+			What happens if the estimated line is used to predict porosity when unit weight is 135? Why is this not a good idea?
+		\item
+			Calculate the residuals corresponding to the first two observations.
+		\item
+			Calculate and interpret a point estimate of $\sigma$.
+		\item
+			What proportion of observed variation in porosity can be attributed to the approximate linear relationship between unit weight and porosity?
+	\end{enumerate}
+	\textbf{\emph{Solve by hand.}}
+\end{problem}
+
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[12.2.22a]
+	Calcium phosphate cement is gaining increasing attention for use in bone repair applications. The article \textbf{"Short-Fibre Reinforcement of Calcium Phosphate Bone Cement" (\emph{J. of Engr. in Med.}, 2007: 203--211)} reported on a study in which polypropylene fibers were used in an attempt to improve fracture behavior. The following data on $x =$ fiber weight (\%) and $y =$ compressive strength (MPa) was provided by the article's authors.
+	\begin{center}
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill} }c | c c c c c c c c c}
+		x & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 1.25 & 1.25 & 1.25 & 1.25\\
+		\hline
+		y & 9.94 & 11.67 & 11.00 & 13.44 & 9.20 & 9.92 & 9.79 & 10.99 & 11.32\\
+	\end{tabular*}
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill} }c | c c c c c c c c c}
+		x & 2.50 & 2.50 & 2.50 & 2.50 & 2.50 & 5.00 & 5.00 & 5.00 & 5.00\\
+		\hline
+		y & 12.29 & 8.69 & 9.91 & 10.45 & 10.25 & 7.89 & 7.61 & 8.07 & 9.04\\
+	\end{tabular*}
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill} }c | c c c c c c c c}
+		x & 7.50 & 7.50 & 7.50 & 7.50 & 10.00 & 10.00 & 10.00 & 10.00\\
+		\hline
+		y & 6.63 & 6.43 & 7.03 & 7.63 & 7.35 & 6.94 & 7.02 & 7.67\\
+	\end{tabular*}
+	\end{center}
+	\begin{enumerate}
+		\item
+			Fit the simple linear regression model to this data. Then determine the proportion of observed variation in strength that can be attributed to the model relationship between strength and fiber weight. Finally, obtain a point estimate of the standard deviation of $\epsilon$, the random deviation in the model equation.
+	\end{enumerate}
+\end{problem}
+
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[12.2.24]
+	The invasive diatom species \textit{Didymosphenia geminata} has the potential to inflict substantial ecological and economic damage in rivers. The article \textbf{"Substrate Characteristics Affect Colonization by the Bloom-Forming Diatom \emph{Didymosphenia geminata} (\emph{Aquatic Ecology}, 2010: 33--40)} described an investigation of colonization behavior. One aspect of particular interest was whether $y =$ colony density was related to $x =$ rock surface area. The article contained a scatterplot and summary of a regression analysis. Here is representative data:
+	\begin{center}
+	\begin{tabular}{c | c c c c c c c c c c c c c c c}
+		x & 50 & 71 & 55 & 50 & 33 & 58 & 79 & 26 & 69 & 44 & 37 & 70 & 20 & 45 & 49\\
+		\hline
+		y & 152 & 1929 & 48 & 22 & 2 & 5 & 35 & 7 & 269 & 38 & 171 & 13 & 43 & 185 & 25\\
+	\end{tabular}
+	\end{center}
+	\begin{enumerate}
+		\item
+			Fit the simple linear regression model to this data, predict colony density when surface area = 70 and when surface area = 71, and calculate the corresponding residuals. How do they compare?
+		\item
+		 	Calculate and interpret the coefficient of determination.
+		\item
+		 	The second observation has a very extreme $y$ value (in the full data set consisting of 72 observations, there were two of these). This observation may have had a substantial impact on the fit of the model and subsequent conclusions. Eliminate it and recalculate the equation of the estimated regression line. Does it appear to differ substantially from the equation before the deletion? What is the impact on $r^2$ and $s$?
+	\end{enumerate}
+\end{problem}
+
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[4.6.88]
+	A sample of 15 female collegiate golfers was selected and the clubhead velocity (km/hr) while swinging a driver was determined for each one, resulting in the following data \textbf{("Hip Rotational Velocities During the Full Golf Swing," \emph{J. of Sports Science and Medicine}, 2009: 296--299)}:
+	\begin{center}
+	\begin{tabular}{c c c c c}
+		69.0 & 69.7 & 72.7 & 80.3 & 81.0\\
+		85.0 & 86.0 & 86.3 & 86.7 & 87.7\\
+		89.3 & 90.7 & 91.0 & 92.5 & 93.0
+	\end{tabular}
+	\end{center}
+	The corresponding $z$ percentiles are
+	\begin{center}
+	\begin{tabular}{c c c c c}
+		-1.83 & -1.28 & -0.97 & -0.73 & -0.52\\
+		-0.34 & -0.17 & 0.0 & 0.17 & 0.34\\
+		0.52 & 0.73 & 0.97 & 1.28 & 1.83
+	\end{tabular}
+	\end{center}
+Construct a normal probability plot and a dotplot. Is it plausible that the population distribution is normal?
+\end{problem}
+
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+
+%%%%%%%%%%%%%%% Number 9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[4.6.89]
+	The accompanying sample consisting of $n = 20$ observations on dielectric breakdown voltage of a piece of epoxy resin appeared in the article \textbf{"Maximum Likelihood Estimation in the 3-Parameter Weibull Distribution (\emph{IEEE Trans. on Dielectrics and Elec. Insul.}, 1996: 43--55)}. The values of $(i - .5)/n$ for which $z$ percentiles are needed are $(1 - .5)/20 = .025$, $(2 - .5)/20 = .075$, $\dots$, and $.975$. Would you feel comfortable estimating population mean voltage using a method that assumed a normal population distribution?
+	\begin{center}
+	\begin{tabular}{l c c c c c c c c c c}
+		\textit{Observation} & 24.46& 25.61 & 26.25 & 26.42 & 26.66 & 27.15 & 27.31 & 27.54 & 27.74 & 27.94\\
+		\textit{$z$ percentile} & -1.96 & -1.44 & - 1.15 & -.93 & -.76 & -.60 & -.45 & -.32 & -.19 & -.06
+	\end{tabular}
+	\begin{tabular}{l c c c c c c c c c c}
+		\textit{Observation} & 27.98 & 28.04 & 28.28 & 28.49 & 28.50 & 28.87 & 29.11 & 29.13 & 29.50 & 30.88\\
+		\textit{$z$ percentile}& .06 & .19 & .32 & .45 & .60 & .76 & .93 & 1.15 & 1.44 & 1.96
+	\end{tabular}
+	\end{center}
+\end{problem}
+
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[4.6.94]
+	The accompanying observations are precipitation values during March over a 30-year period in Minneapolis-St. Paul.
+	\begin{center}
+	\begin{tabular}{c c c c c c c c c c}
+		.77 & 1.20 & 3.00 & 1.62 & 2.81 & 2.48 & 1.74 & .47 & 3.09 & 1.31\\
+		 1.87 & .96 & .81 & 1.43 & 1.51 & .32 & 1.18 & 1.89 & 1.20 & 3.37\\
+		 2.10 & .59 & 1.35 & .90 & 1.95 & 2.20 & .52 & .81 & 4.75 & 2.05
+	\end{tabular}
+	\end{center}
+	\begin{enumerate}
+		\item
+			Construct and interpret a normal probability plot for this data set.
+		\item
+			Calculate the square root of each value and then construct a normal probability plot based on this transformed data. Does it seem plausible that the square root of precipitation is normally distributed?
+		\item
+			Repeat part (b) after transforming by cube roots.
+	\end{enumerate}
+\end{problem}
+
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[12.5.58]
+	The Turbine Oil Oxidation Test (TOST) and the Rotating Bomb Oxidation Test (RBOT) are two different procedures for evaluating the oxidation stability of steam turbine oils. The article \textbf{"Dependence of Oxidation Stability of Steam Turbine Oil on Base Oil Composition" (\emph{J. of the Society of Tribologists and Lubrication Engrs.}, Oct. 1997: 19--24)} reported the accompanying observations on $x = $ TOST time (hr) and $y =$ RBOT time (min) for 12 oil specimens.
+	\begin{center}
+	\begin{tabular}{l | c c c c c c c c c c c c}
+		\textbf{TOST} & 4200 & 3600 & 3750 & 3675 & 4050 & 2770 & 4870 & 4500 & 3450 & 2700 & 3750 & 3300\\
+		\hline
+		 \textbf{RBOT} & 370 & 340 & 375 & 310 & 350 & 200 & 400 & 375 & 285 & 225 & 345 & 285
+	\end{tabular}
+	\end{center}
+	\begin{enumerate}
+		\item
+			Calculate and interpret the value of the sample correlation coefficient (as do the article's authors).
+		\item
+			How would the value of $r$ be affected if we had let $x =$ RBOT time and $y =$ TOST time?
+		\item
+			How would the value of $r$ be affected if RBOT time were expressed in hours?
+		\item
+			Construct normal probability plots and comment.
+		\item
+			Carry out a test of hypotheses to decide whether RBOT time and TOST time are linearly related.
+	\end{enumerate}
+\end{problem}
+
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+%%%%%%%%%%%%%%% Number 12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}[12.5.59]
+	Toughness and fibrousness of asparagus are major determinants of quality. This was the focus of a study reported in \textbf{"Post-Harvest Glyphosphate Application Reduces Toughening, Fiber Content, and Lignification of Stored Asparagus Spears" (\emph{J. of the Amer. Soc. of Hort. Science}, 1988: 569--572)}. The article reported the accompanying data (read from a graph) on $x =$ shear force (kg) and $y =$ percent fiber dry weight.
+	\begin{center}
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill} }c | c c c c c c c c c}
+		x & 46 & 48 & 55 & 57 & 60 & 72 & 81 & 85 & 94\\
+		\hline
+		y & 2.18 & 2.10 & 2.13 & 2.28 & 2.34 & 2.53 & 2.28 & 2.62 & 2.63
+	\end{tabular*}
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill} }c | c c c c c c c c c}
+		x & 109 & 121 & 132 & 137 & 148 & 149 & 184 & 185 & 187\\
+		\hline
+		y & 2.50 & 2.66 & 2.79 & 2.80 & 3.01 & 2.98 & 3.34 & 3.49 & 3.26
+	\end{tabular*}
+	\end{center}
+	$n = 18$, $\Sigma x_i= 1950$, $\Sigma x_i ^2 = 251,970$, $\Sigma y_i = 47.92$, $\Sigma y_i ^2 = 130.6074$, $\Sigma x_i y_i = 5530.92$.
+	\begin{enumerate}
+		\item
+			Calculate the value of the sample correlation coefficient. Based on this value, how would you describe the nature of the relationship between the two variables?
+		\item
+			If a first specimen has a larger value of shear force than does a second specimen, what tends to be true of percent dry fiber weight for the two specimens?
+		\item
+			If shear force is expressed in pounds, what happens to the value of $r$? Why?
+		\item
+			If the simple linear regression model were fit to this data, what proportion of observed variation in percent fiber dry weight could be explained by the model relationship?
+		\item
+			Carry out a test at significance level .01 to decide whether there is a positive linear association between the two variables.
+	\end{enumerate}
+	
+	\textbf{\emph{Solve by hand.}}
+	
+\end{problem}
+
+\begin{solution}
+	\vfill
+\end{solution}
+\end{document}
