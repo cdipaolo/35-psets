@@ -1,0 +1,85 @@
+\documentclass[11pt,letterpaper,boxed]{hmcpset}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{cancel}
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% convenient delimiters
+\newcommand{\set}[1]{\ensuremath{ \left\{ #1 \right\} }}
+\newcommand{\pn}[1]{\left( #1 \right)}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\bk}[1]{\left[ #1 \right]}
+\newcommand{\vc}[1]{\left\langle #1 \right\rangle}
+
+% set numbering style for enumerated lists to be of form (a), (b), (c), etc.
+\renewcommand{\labelenumi}{{(\alph{enumi})}}
+
+
+\name{}
+\class{Math 35, Section - }
+\assignment{Problem Set 8}
+\duedate{December 11, 2015}
+
+\begin{document}
+
+    \problemlist{14.1.\{1, 3, 8\}}
+
+    %%%%%%%%%%%%%%% Number 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{problem}[14.1.1]
+    	What conclusion would be appropriate for an upper-tailed chi-squared test in each of the following situations?
+
+        \begin{enumerate}
+            \item $\alpha = 0.05$ , df $= 4$, $\chi^2 = 12.25$
+
+            \item $\alpha = 0.01$ , df $= 3$, $\chi^2 = 8.54$
+
+            \item $\alpha = 0.10$ , df $= 2$, $\chi^2 = 4.36$
+
+            \item $\alpha = 0.01$ , $k = 6$, $\chi^2 = 10.20$
+        \end{enumerate}
+    \end{problem}
+
+    \begin{solution}
+        \vfill
+    \end{solution}
+    \newpage
+
+    %%%%%%%%%%%%%%% Number 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{problem}[14.1.3]
+        It is hypothesized that when homing pigeons are disoriented in a certain manner, they will exhibit no preference for any direction of flight after takeoff (so that the direction $X$ should be uniformly distributed on the interval from $0^\circ$ to $360^\circ$). To test this, 120 pigeons are disoriented, let loose, and the direction of flight of each is recorded; the resulting data follows. Use the chi-squared test at level .10 to see whether the data supports the hypothesis.
+
+        \begin{tabular}{c|c c c c c}
+        Direction & 0 -- $< 45^\circ$   & 45 -- $< 90^\circ$    & 90 -- $< 135^\circ$   & 135 -- $< 180^\circ$  & 180 -- $< 225^\circ$  \\
+        \hline
+        Frequency & 12                  & 16                    & 17                    & 15                    & 13                    \\
+        \\
+        Direction & 255 -- $< 270^\circ$& 270 -- $< 315^\circ$  & 315 -- $< 360^\circ$  \\
+        \hline
+        Frequency & 20                  & 17                    & 10                    \\
+        \end{tabular}
+    \end{problem}
+
+    \begin{solution}
+        \vfill
+    \end{solution}
+    \newpage
+
+    %%%%%%%%%%%%%%% Number 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{problem}[14.1.8]
+        The article ``Psychiatric and Alcoholic Admissions Do Not Occur Disproportionately Close to Patients’ Birthdays'' (\textit{Psychological Reports}, 1992: 944--946) focuses on the existence of any relationship between the date of patient admission for treatment of alcoholism and the patient's birthday. Assuming a 365-day year (i.e., excluding leap year), in the absence of any relation, a patient's admission date is equally likely to be any one of the 365 possible days. The investigators established four different admission categories: (1) within 7 days of birthday; (2) between 8 and 30 days, inclusive, from the birthday; (3) between 31 and 90 days, inclusive, from the birthday; and (4) more than 90 days from the birthday. A sample of 200 patients gave observed frequencies of 11, 24, 69, and 96 for categories 1, 2, 3, and 4, respectively. State and test the relevant hypotheses using a significance level of .01.
+    \end{problem}
+
+    \begin{solution}
+        \vfill
+    \end{solution}
+\end{document}
